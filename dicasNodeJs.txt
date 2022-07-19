@@ -10,3 +10,8 @@ A solução para resolver este problema de modo fácil é:
 Ou:
 1. Instale o pacote diretamente na versão 4.1.2 com npm install chalk@4.1.2
 
+//// inicializar o package.json
+npm init
+
+///inquirer
+npm install --save inquirer@8.0.0
