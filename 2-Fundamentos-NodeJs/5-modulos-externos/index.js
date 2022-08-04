@@ -8,4 +8,4 @@ const profissao = args["profissao"];
 
 console.log(`O nome é ${nome} profissão ${profissao}`);
 
-// comando node index.js --nome=Thay --profissao=Professora    
+// comando node index.js --nome=Ana --profissao=Programadora    
