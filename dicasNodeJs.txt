@@ -15,3 +15,21 @@ npm init
 
 ///inquirer
 npm install --save inquirer@8.0.0
+
+//criar projeto nodejs mais rapido pelo init
+npm init -y
+
+//dependencia de desenvolvimento
+npm install nomedopacote --save-dev
+
+//atualizar pacotes
+npm update
+npx npm-check-updates -u //verifica atualizacao de pacote
+
+//instalar pacote global
+npm install -g nomedopacote
+npm link lodash  baixar link do global
+
+//remover pacote 
+npm uninstall ou npm uninstall -g se for global 
+

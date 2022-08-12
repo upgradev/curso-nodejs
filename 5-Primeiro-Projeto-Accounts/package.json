@@ -1,0 +1,18 @@
+{
+  "name": "5-primeiro-projeto-accounts",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Cleison França Amorim",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "inquirer": "^9.1.0"
+  }
+}
