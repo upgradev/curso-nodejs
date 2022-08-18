@@ -1,35 +1,42 @@
 ///// comandos basicos
-iniciar node no terminal: node
-depois que criar o arquivo .js executar com o comando node nomedoarquivo.js
+    iniciar node no terminal: node
+    depois que criar o arquivo .js executar com o comando node nomedoarquivo.js
 
 ///// chalk
-Com a sua última atualização não podemos mais utilizá-lo com o require
-A solução para resolver este problema de modo fácil é:
-1. Desinstale localmente a versão atual do Chalk usando npm uninstall chalk ;
-2. Instale localmente a versão anterior à 5 usando npm install chalk@4.1.2 .
-Ou:
-1. Instale o pacote diretamente na versão 4.1.2 com npm install chalk@4.1.2
+    Com a sua última atualização não podemos mais utilizá-lo com o require
+    A solução para resolver este problema de modo fácil é:
+    1. Desinstale localmente a versão atual do Chalk usando npm uninstall chalk ;
+    2. Instale localmente a versão anterior à 5 usando npm install chalk@4.1.2 .
+    Ou:
+    1. Instale o pacote diretamente na versão 4.1.2 com npm install chalk@4.1.2
 
 //// inicializar o package.json
-npm init
+    npm init
 
 ///inquirer
-npm install --save inquirer@8.0.0
+    npm install --save inquirer@8.0.0
 
 //criar projeto nodejs mais rapido pelo init
-npm init -y
+    npm init -y
 
 //dependencia de desenvolvimento
-npm install nomedopacote --save-dev
+    npm install nomedopacote --save-dev
 
 //atualizar pacotes
-npm update
-npx npm-check-updates -u //verifica atualizacao de pacote
+    npm update
+    npx npm-check-updates -u //verifica atualizacao de pacote
 
 //instalar pacote global
-npm install -g nomedopacote
-npm link lodash  baixar link do global
+    npm install -g nomedopacote
+    npm link lodash  baixar link do global
 
 //remover pacote 
-npm uninstall ou npm uninstall -g se for global 
+    npm uninstall ou npm uninstall -g se for global 
+
+//express
+    npm init -y e depois npm install express
+
+//refresh automatico quando salva as alteracoes
+    npm install --save-dev nodemon
+    "start": "nodemon ./index.js localhost 3000"
 
