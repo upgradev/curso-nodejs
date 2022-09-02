@@ -40,3 +40,16 @@
     npm install --save-dev nodemon
     "start": "nodemon ./index.js localhost 3000"
 
+//Handlebars
+Houve uma pequena alteração no Handlebars, que vai quebrar o código das aulas seguintes
+Para reparar basta trocar esta linha de código:
+app.engine('handlebars', exphbs())
+Por esta:
+app.engine('handlebars', exphbs.engine())
+
+/// instalar mysql
+sudo apt install mysql_server
+sudo mysql_secure_installation
+
+/// instalar Postgres
+yarn add pg
