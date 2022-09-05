@@ -30,8 +30,58 @@ app.post("/books/insertbook", (req, res) => {
   conn.query(query, function (err) {
     if (err) {
       console.log(`Erro Insert: ${err}`);
+      return;
     }
-    res.redirect("/");
+    res.redirect("/books");
+  });
+});
+
+app.get("/books", (req, res) => {
+  const sql = "SELECT * FROM books";
+
+  conn.query(sql, function (err, data) {
+    if (err) {
+      console.log(`Erro ao buscar books`);
+      return;
+    }
+
+    const books = data.rows;
+
+    res.render("books", { books });
+  });
+});
+
+app.get("/books/:id", (req, res) => {
+  const id = req.params.id;
+
+  const sql = `SELECT * FROM books where id = ${id} `;
+
+  conn.query(sql, function (err, data) {
+    if (err) {
+      console.log(`Erro ao buscar book`);
+      return;
+    }
+
+    const book = data.rows[0];
+
+    res.render("book", { book });
+  });
+});
+
+app.get("/books/edit/:id", (req, res) => {
+  const id = req.params.id;
+
+  const sql = `SELECT * FROM books where id = ${id} `;
+
+  conn.query(sql, function (err, data) {
+    if (err) {
+      console.log(`Erro ao buscar book para editar`);
+      return;
+    }
+
+    const book = data.rows[0];
+
+    res.render("editbook", { book });
   });
 });
 
@@ -44,7 +94,6 @@ conn.connect(function (err) {
     console.log(`Erro da conexao: ${err}`);
   }
   console.log("Conectou ao PostgreSQL");
- 
 
   app.listen(3000);
 });

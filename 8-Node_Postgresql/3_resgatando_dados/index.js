@@ -30,8 +30,25 @@ app.post("/books/insertbook", (req, res) => {
   conn.query(query, function (err) {
     if (err) {
       console.log(`Erro Insert: ${err}`);
+      return;
     }
-    res.redirect("/");
+    res.redirect("/books");
+  });
+});
+
+app.get("/books", (req, res) => {
+  const sql = "SELECT * FROM books";
+
+  conn.query(sql, function (err, data) {
+    if (err) {
+      console.log(`Erro ao buscar books`);
+      return;
+    }
+
+    const books = data.rows;
+
+    console.log(books.rows);
+    res.render("books", { books });
   });
 });
 
@@ -44,7 +61,6 @@ conn.connect(function (err) {
     console.log(`Erro da conexao: ${err}`);
   }
   console.log("Conectou ao PostgreSQL");
- 
 
   app.listen(3000);
 });
