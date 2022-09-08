@@ -36,7 +36,7 @@ app.post("/books/insertbook", (req, res) => {
 });
 
 const conn = new Pool({
-  connectionString: "postgres://postgres:postgres@localhost:5432/estudonodejs",
+  connectionString: "postgres://postgres:password@localhost:5432/databasename",
 });
 
 conn.connect(function (err) {

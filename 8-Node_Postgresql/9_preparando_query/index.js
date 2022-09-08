@@ -123,9 +123,6 @@ app.post("/books/remove/:id", (req, res) => {
   });
 });
 
-// const conn = new Pool({
-//   connectionString: "postgres://postgres:postgres@localhost:5432/estudonodejs",
-// });
 
 conn.connect(function (err) {
   if (err) {
