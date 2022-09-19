@@ -53,3 +53,6 @@ sudo mysql_secure_installation
 
 /// instalar Postgres
 yarn add pg
+
+//sequelize
+yarn add sequelize
