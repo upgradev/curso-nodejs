@@ -56,3 +56,5 @@ yarn add pg
 
 //sequelize
 yarn add sequelize
+
+yarn add express express-handlebars pg sequelize nodemon
