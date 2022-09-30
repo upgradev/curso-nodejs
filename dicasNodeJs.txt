@@ -58,3 +58,21 @@ yarn add pg
 yarn add sequelize
 
 yarn add express express-handlebars pg sequelize nodemon
+
+yarn add bcryptjs connect-flash cookie-parser cookie-session express express-flash express-session pg sequelize nodemon session-file-store express-handlebars
+gerar a senha criptografada - 
+mensagem sempre que um usuário estiver redirecionando para uma página da web especificada
+manter a sessao,
+manter a sessao,
+express,
+mensagem sempre que um usuário estiver redirecionando para uma página da web especificada,
+autenticação mais simples,
+banco,
+sequelize,
+nodemon,
+salvar sessões em arquivos
+views
+
+
+//mongodb
+yarn add express express-handlebars mongodb nodemon
