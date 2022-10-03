@@ -76,3 +76,6 @@ views
 
 //mongodb
 yarn add express express-handlebars mongodb nodemon
+
+//mongoose
+yarn add mongoose
