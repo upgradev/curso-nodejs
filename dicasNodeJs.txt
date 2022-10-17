@@ -79,3 +79,22 @@ yarn add express express-handlebars mongodb nodemon
 
 //mongoose
 yarn add mongoose
+
+//cors proteção de rota
+yarn add cors
+
+//jsonwebtoken 
+yarn add jsonwebtoken
+
+//multer upload de foto
+yarn add multer
+
+//criar projeto react
+npx create-react-app nomedoapp ou npx create-react-app . para criar no diretorio raiz que deseja
+
+//pacotes para react
+yarn add axios events react-icons react-router-dom 
+conexao bom as rotas backend
+evento de mensageria
+icones do react
+roteamento de paginas
